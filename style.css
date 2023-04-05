@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
+
+}
+
+header {
+    text-align: center;
+    background: #451F55;
+    padding: 20px;
+    font: bold 1.25em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fffbf3;
+}
+
+section#inputs { 
+    margin: auto;
+    text-align: center;
+    background: #451F55;
+    width: 80%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 15px;
+    height: 70px;
+}
+
+.dados {
+    width: 25%;
+    padding: 8px;
+    height: 33px;
+    color: #42190f;
+    background-color: #bec3d3;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .dados { font-size: 11px;}
+}
+input[type = "number"] {
+    width: 18%;
+    padding: 3px;
+    color: #42190f;
+    background-color: #bec3d3;
+    text-align: center;
+}
+input#quantidade {
+    width: 12%;
+    max-width: 70px;
+}
+input[type = "submit"] {
+    width: 11%;
+    font-size: 11px;
+    height: 23px;
+    max-width: 100px;
+    margin-top: 7px;
+    background-color: #eee7b1;
+    cursor: pointer;
+}
+
+#product_section {
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px 0;
+    background-color: #4f978c23;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: #263d3a48 2px 3px 6px 1px;
+    max-width: 1250px;
+}
+
+.products {
+    flex: 1;
+    margin-left: 30px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 15px ;
+}
+
+h3.prices {
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+h3.prices > span {
+    background-color: #eee7b1e1;
+    border-radius: 10px;
+    color: #5c5c5c;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.total_price {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    color: #3d184d;
+}

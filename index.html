@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--HTML-->
+    <header>
+        <h1>Lista de compras</h1>
+    </header>
+    <section id="inputs">
+        <input type="text" title="Insira o Nome do seu produto" placeholder="Nome do produto..." class="dados" id="produto">
+        <input type="number" title="Insira a Quantidade de produtos" placeholder="Qnt..." class="dados" id="quantidade" step="1" maxlength="2">
+        <input type="number" title="Insira o Custo do seu produto" placeholder="Custo..." class="dados" id="valor" step="0.1" maxlength="3">
+        <input type="number" title="Insira seu Saldo atual" placeholder="Saldo..." class="dados" id="saldo" step="0.1"> <br>
+        <input id="submit" type="submit" onmouseenter="SubmitIn()" onmouseleave="SubmitOut()" onclick="NovoItem()">
+    </section>
+    <section id="product_section" hidden>
+        <div id="product_div"></div>
+        <div class="total_price">
+            <h1 id="total_price">Total: ...</h1>
+        </div>
+    </section>
+
+<!--/HTML-->
+<script src="script.js">
+
+</script>
+</body>
+</html>
